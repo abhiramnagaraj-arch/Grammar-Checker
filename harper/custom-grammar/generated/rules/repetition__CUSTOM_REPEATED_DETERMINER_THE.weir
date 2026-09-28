@@ -1,0 +1,24 @@
+expr main (the the)
+
+let message "Remove the repeated article."
+let description "Removes an adjacent repeated determiner."
+let kind "Grammar"
+let becomes "the"
+let strategy "MatchCase"
+
+test "the the car" "the car"
+test "The the answer was clear." "The answer was clear."
+test "They chose the the first option." "They chose the first option."
+test "Why the the delay?" "Why the delay?"
+test "He kept the the same seat." "He kept the same seat."
+
+allows "the car"
+allows "the other car"
+allows "the theme of the talk"
+allows "The theater was full."
+allows "the best answer"
+allows "a the mistake"
+allows "in the end"
+allows "the, the, and only the key"
+allows "The theistic view was discussed."
+allows "their the plan"

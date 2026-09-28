@@ -1,0 +1,23 @@
+expr main (between you and I)
+
+let message "Use me after between you and."
+let description "Fixes a narrow pronoun-case error after a fixed preposition phrase."
+let kind "Grammar"
+let status "disabled"
+let becomes "between you and me"
+let strategy "Exact"
+
+allows "Between you and me, it works."
+allows "You and I agreed."
+allows "It stayed between us."
+allows "Between you and her, it works."
+allows "Between you and him, it works."
+allows "between you and Ibis was the title"
+allows "The phrase between you and me is common."
+allows "You and me, not I, are late."
+allows "Between you and I don't know."
+allows "The note was between you and me, then gone."
+allows "Between you and I, it works."
+allows "It stayed between you and I."
+allows "Why between you and I now?"
+allows "The choice was between you and I alone."

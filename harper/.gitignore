@@ -1,0 +1,7 @@
+references/*.pdf
+custom-grammar/generated/*.weirpack
+custom-grammar/generated/*.json
+custom-grammar/reports/*.csv
+custom-grammar/reports/*.json
+custom-grammar/reports/*.weirpack
+results/*.csv

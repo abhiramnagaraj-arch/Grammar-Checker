@@ -1,0 +1,24 @@
+expr main (an information)
+
+let message "Drop the article before information."
+let description "Removes a narrow article misuse before an uncountable noun."
+let kind "Grammar"
+let becomes "information"
+let strategy "MatchCase"
+
+test "An information was missing." "Information was missing."
+test "I need an information now." "I need information now."
+test "AN INFORMATION is enough." "INFORMATION is enough."
+test "She shared an information with us." "She shared information with us."
+test "The report contained an information gap." "The report contained information gap."
+
+allows "Information was missing."
+allows "A lot of information was missing."
+allows "This information is useful."
+allows "The information was clear."
+allows "Some information was missing."
+allows "The note contained information about the trip."
+allows "An informative talk was given."
+allows "The phrase about information sources is odd."
+allows "Useful information arrived."
+allows "Several pieces of information were shared."

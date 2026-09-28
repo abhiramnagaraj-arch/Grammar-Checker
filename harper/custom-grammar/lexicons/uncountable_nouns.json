@@ -1,0 +1,52 @@
+{
+  "advice": {
+    "default": "uncountable",
+    "plural_allowed": false,
+    "exceptions": []
+  },
+  "equipment": {
+    "default": "uncountable",
+    "plural_allowed": false,
+    "exceptions": []
+  },
+  "furniture": {
+    "default": "uncountable",
+    "plural_allowed": false,
+    "exceptions": []
+  },
+  "homework": {
+    "default": "uncountable",
+    "plural_allowed": false,
+    "exceptions": []
+  },
+  "information": {
+    "default": "uncountable",
+    "plural_allowed": false,
+    "exceptions": []
+  },
+  "knowledge": {
+    "default": "uncountable",
+    "plural_allowed": false,
+    "exceptions": []
+  },
+  "luggage": {
+    "default": "uncountable",
+    "plural_allowed": false,
+    "exceptions": []
+  },
+  "news": {
+    "default": "uncountable",
+    "plural_allowed": false,
+    "exceptions": []
+  },
+  "research": {
+    "default": "uncountable",
+    "plural_allowed": false,
+    "exceptions": []
+  },
+  "traffic": {
+    "default": "uncountable",
+    "plural_allowed": false,
+    "exceptions": []
+  }
+}

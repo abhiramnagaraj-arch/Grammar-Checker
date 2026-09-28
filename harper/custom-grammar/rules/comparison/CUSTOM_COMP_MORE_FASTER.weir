@@ -1,0 +1,24 @@
+expr main (more faster)
+
+let message "Use faster instead of more faster."
+let description "Fixes a narrow double-comparative phrase."
+let kind "Grammar"
+let becomes "faster"
+let strategy "MatchCase"
+
+test "This is more faster." "This is faster."
+test "It moved more faster today." "It moved faster today."
+test "That car is more faster." "That car is faster."
+test "Why is this more faster?" "Why is this faster?"
+test "The system was more faster than before." "The system was faster than before."
+
+allows "This is faster."
+allows "This is much faster."
+allows "This is more efficient."
+allows "Faster results arrived."
+allows "A more detailed answer was helpful."
+allows "This was the faster option."
+allows "The phrase more or less is common."
+allows "He said more, faster, and cleaner."
+allows "More than one answer is valid."
+allows "The faster route was obvious."

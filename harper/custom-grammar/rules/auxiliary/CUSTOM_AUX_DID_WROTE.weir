@@ -1,0 +1,24 @@
+expr main (did wrote)
+
+let message "Use the base verb after did."
+let description "Corrects a narrow irregular-verb form after did."
+let kind "Grammar"
+let becomes "did write"
+let strategy "MatchCase"
+
+test "I did wrote a note." "I did write a note."
+test "She did wrote the message." "She did write the message."
+test "They DID wrote clearly." "They DID write clearly."
+test "Why did wrote that?" "Why did write that?"
+test "He did wrote it, then left." "He did write it, then left."
+
+allows "I did write a note."
+allows "She did not write the message."
+allows "We wrote a note."
+allows "Did you write that?"
+allows "He had written it."
+allows "We did, at last, write it."
+allows "They will write it."
+allows "I have written it."
+allows "The wrote answer was corrected."
+allows "He did think twice."

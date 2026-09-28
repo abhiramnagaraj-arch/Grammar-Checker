@@ -1,0 +1,24 @@
+expr main (a hour)
+
+let message "Use an before hour."
+let description "Uses the article expected before a silent-h sound word."
+let kind "Grammar"
+let becomes "an hour"
+let strategy "MatchCase"
+
+test "It was a hour late." "It was an hour late."
+test "A hour passed quickly." "An hour passed quickly."
+test "She waited a hour outside." "She waited an hour outside."
+test "They stayed for A HOUR." "They stayed for AN HOUR."
+test "I need a hour to finish." "I need an hour to finish."
+
+allows "It was an hour late."
+allows "It was a honest mistake."
+allows "It was a university event."
+allows "It was a house tour."
+allows "It was an honor."
+allows "A whale swam by."
+allows "The hour was late."
+allows "a hourly update"
+allows "The story took an hour."
+allows "A long hour passed."

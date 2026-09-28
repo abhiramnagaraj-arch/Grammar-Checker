@@ -1,0 +1,22 @@
+{
+  "best": {
+    "base": "good",
+    "kind": "superlative"
+  },
+  "better": {
+    "base": "good",
+    "kind": "comparative"
+  },
+  "faster": {
+    "base": "fast",
+    "kind": "comparative"
+  },
+  "worse": {
+    "base": "bad",
+    "kind": "comparative"
+  },
+  "worst": {
+    "base": "bad",
+    "kind": "superlative"
+  }
+}

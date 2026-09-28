@@ -1,0 +1,24 @@
+expr main (more better)
+
+let message "Use better instead of more better."
+let description "Fixes a narrow double-comparative phrase."
+let kind "Grammar"
+let becomes "better"
+let strategy "MatchCase"
+
+test "This is more better." "This is better."
+test "It got more better today." "It got better today."
+test "That plan is more better." "That plan is better."
+test "Why is this more better?" "Why is this better?"
+test "The result was more better than before." "The result was better than before."
+
+allows "This is better."
+allows "This is much better."
+allows "This is more important."
+allows "Better results arrived."
+allows "A more detailed answer was helpful."
+allows "This was the better option."
+allows "The phrase more or less is common."
+allows "He said more, better, and faster."
+allows "More than one answer is valid."
+allows "The better part was obvious."

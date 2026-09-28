@@ -1,0 +1,24 @@
+expr main (did made)
+
+let message "Use the base verb after did."
+let description "Corrects a narrow irregular-verb form after did."
+let kind "Grammar"
+let becomes "did make"
+let strategy "MatchCase"
+
+test "I did made a plan." "I did make a plan."
+test "She did made the cake." "She did make the cake."
+test "They DID made it work." "They DID make it work."
+test "Why did made that?" "Why did make that?"
+test "He did made it, then left." "He did make it, then left."
+
+allows "I did make a plan."
+allows "She did not make the cake."
+allows "We made a plan."
+allows "Did you make that?"
+allows "He had made it."
+allows "We did, at last, make it."
+allows "They will make it."
+allows "I have made it."
+allows "The made-up story was fun."
+allows "He did think twice."

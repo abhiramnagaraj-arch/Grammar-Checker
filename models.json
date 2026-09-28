@@ -1,0 +1,72 @@
+{
+  "unbabel": {
+    "architecture": "encoder-decoder",
+    "model_path": "models/ct2/unbabel-gec-t5-small-ct2-int8",
+    "tokenizer_path": "tokenizers/unbabel-gec-t5-small-tokenizer",
+    "prefix": "gec: ",
+    "max_input_length": 128,
+    "max_output_length": 128,
+    "beam_size": 5
+  },
+  "vennify": {
+    "architecture": "encoder-decoder",
+    "model_path": "models/ct2/vennify-t5-grammar-ct2-int8",
+    "tokenizer_path": "tokenizers/vennify-t5-tokenizer",
+    "prefix": "grammar: ",
+    "max_input_length": 128,
+    "max_output_length": 128,
+    "beam_size": 5
+  },
+  "prithivida": {
+    "architecture": "encoder-decoder",
+    "model_path": "models/ct2/prithivida-grammar-ct2-int8",
+    "tokenizer_path": "tokenizers/prithivida-grammar-tokenizer",
+    "prefix": "",
+    "max_input_length": 256,
+    "max_output_length": 128,
+    "beam_size": 5
+  },
+  "floyd93": {
+    "architecture": "encoder-decoder",
+    "model_path": "models/ct2/floyd93-grammar-correction-ct2-int8",
+    "tokenizer_path": "tokenizers/floyd93-grammar-correction-tokenizer",
+    "prefix": "",
+    "max_input_length": 256,
+    "max_output_length": 128,
+    "beam_size": 5
+  },
+  "flan-t5": {
+    "architecture": "encoder-decoder",
+    "model_path": "models/ct2/google-flan-t5-base-ct2-int8",
+    "tokenizer_path": "tokenizers/google-flan-t5-base-tokenizer",
+    "prefix": "Correct the grammar of the following sentence. Return only the corrected sentence: ",
+    "max_input_length": 256,
+    "max_output_length": 128,
+    "beam_size": 5
+  },
+  "qwen": {
+    "architecture": "decoder-only",
+    "model_path": "models/ct2/qwen2.5-1.5b-instruct-ct2-int8",
+    "tokenizer_path": "tokenizers/qwen2.5-1.5b-instruct-tokenizer",
+    "system_prompt": "You are a grammatical error correction engine. Correct only grammar, spelling, punctuation, capitalization, and spacing. Preserve the original meaning. Return only the corrected sentence.",
+    "prompt_template": "Correct this sentence:\n{text}",
+    "postprocess_prefixes": [
+      "Corrected sentence:",
+      "Corrected Sentence:",
+      "Correction:",
+      "Output:"
+    ],
+    "max_input_length": 256,
+    "max_output_length": 128,
+    "beam_size": 1
+  },
+  "visheratin-mini": {
+    "architecture": "encoder-decoder",
+    "model_path": "models/ct2/visheratin-t5-efficient-mini-grammar-ct2-int8",
+    "tokenizer_path": "tokenizers/visheratin-t5-efficient-mini-grammar-tokenizer",
+    "prefix": "",
+    "max_input_length": 128,
+    "max_output_length": 128,
+    "beam_size": 4
+  }
+}

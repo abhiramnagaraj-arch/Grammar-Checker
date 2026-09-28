@@ -1,0 +1,24 @@
+{
+  "name": "harper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run grammar:validate",
+    "grammar:validate": "node custom-grammar/scripts/validate.mjs",
+    "grammar:generate": "node custom-grammar/scripts/generate.mjs",
+    "grammar:pack": "node custom-grammar/scripts/pack.mjs",
+    "grammar:test": "node custom-grammar/scripts/test.mjs",
+    "grammar:benchmark": "node custom-grammar/scripts/benchmark.mjs",
+    "grammar:report": "node custom-grammar/scripts/report.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^7.0.1",
+    "csv-stringify": "^6.8.1",
+    "harper.js": "^2.4.0"
+  },
+  "type": "module"
+}

@@ -1,0 +1,24 @@
+expr main (most best)
+
+let message "Use best instead of most best."
+let description "Fixes a narrow double-superlative phrase."
+let kind "Grammar"
+let becomes "best"
+let strategy "MatchCase"
+
+test "This is most best." "This is best."
+test "It felt most best today." "It felt best today."
+test "That answer is MOST best." "That answer is BEST."
+test "Why is this most best?" "Why is this best?"
+test "The result was most best of all." "The result was best of all."
+
+allows "This is best."
+allows "This is the best."
+allows "This is much better."
+allows "The best result arrived."
+allows "A most detailed answer was helpful."
+allows "This was the best option."
+allows "The phrase most of all is common."
+allows "He said most, best, and fastest."
+allows "Most answers are valid."
+allows "The best part was obvious."

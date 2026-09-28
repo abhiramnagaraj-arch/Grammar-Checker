@@ -1,0 +1,24 @@
+expr main (must to)
+
+let message "Drop the extra to after must."
+let description "Removes a redundant to after must in a narrow local pattern."
+let kind "Grammar"
+let becomes "must"
+let strategy "MatchCase"
+
+test "I must to go." "I must go."
+test "She must to stay." "She must stay."
+test "They MUST to hurry." "They MUST hurry."
+test "Why must to wait?" "Why must wait?"
+test "He must to leave, if needed." "He must leave, if needed."
+
+allows "I must go."
+allows "She must not go."
+allows "We need to go."
+allows "Must you leave?"
+allows "I must, if possible, go."
+allows "They must always wait."
+allows "You must do it."
+allows "The must-have case was hard."
+allows "He must try again."
+allows "We must go now."

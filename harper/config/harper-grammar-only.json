@@ -1,0 +1,7 @@
+{
+  "dialect": "American",
+  "lintConfig": {},
+  "weirpack": null,
+  "dictionary": null,
+  "description": "Grammar-oriented baseline with built-in Harper only."
+}

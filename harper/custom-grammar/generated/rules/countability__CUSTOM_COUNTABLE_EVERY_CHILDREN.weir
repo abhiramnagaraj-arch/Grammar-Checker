@@ -1,0 +1,24 @@
+expr main (every children need)
+
+let message "Use a singular noun after every."
+let description "Fixes a narrow every-plus-plural pattern."
+let kind "Grammar"
+let becomes "every child needs"
+let strategy "MatchCase"
+
+test "Every children need" "Every child needs"
+test "every children need" "every child needs"
+test "Every children need." "Every child needs."
+test "Every children need?" "Every child needs?"
+test "Every children need!" "Every child needs!"
+
+allows "Every child needs a seat."
+allows "Every one of the children needs a seat."
+allows "Every student needs a seat."
+allows "The children were counted."
+allows "Every, children, and adults were listed."
+allows "Every young child needs a seat."
+allows "We bought seats for every child."
+allows "Every child was counted."
+allows "Every one of these children matters."
+allows "All children need a seat."

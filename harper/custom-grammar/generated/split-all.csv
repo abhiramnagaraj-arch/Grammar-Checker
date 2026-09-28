@@ -1,0 +1,594 @@
+test_id,input,expected_output,use_case
+1,Jonh Doe is a software engineer at IBIM.,John Doe is a software engineer at IBM.,Misspelled Names & Acronyms
+2,She attended Harvard Univeristy for her degree.,She attended Harvard University for her degree.,Misspelled Names & Acronyms
+3,NASA launced a new rocket this year.,NASA launched a new rocket this year.,Misspelled Names & Acronyms
+4,The CEO of Amazoon is speaking today.,The CEO of Amazon is speaking today.,Misspelled Names & Acronyms
+5,I met Michel Jordon at the event.,I met Michael Jordan at the event.,Misspelled Names & Acronyms
+6,The USAs economy is growing.,The USA's economy is growing.,Misspelled Names & Acronyms
+7,I work for Microsoft Coporation.,I work for Microsoft Corporation.,Misspelled Names & Acronyms
+8,He graduated from Standford University.,He graduated from Stanford University.,Misspelled Names & Acronyms
+9,He drives a Toyata Camry.,He drives a Toyota Camry.,Misspelled Names & Acronyms
+10,The FBI has lunched an investigation.,The FBI has launched an investigation.,Misspelled Names & Acronyms
+11,I'm reading a book by Eernest Hemingway.,I'm reading a book by Ernest Hemingway.,Misspelled Names & Acronyms
+12,Googel is a big tech company.,Google is a big tech company.,Misspelled Names & Acronyms
+13,The NATO aliiance is expanding.,The NATO alliance is expanding.,Misspelled Names & Acronyms
+14,I work for a tech company called Inttel.,I work for a tech company called Intel.,Misspelled Names & Acronyms
+15,UNESCO is dedicated to preserving world herritage.,UNESCO is dedicated to preserving world heritage.,Misspelled Names & Acronyms
+16,Teslla released a new model last week.,Tesla released a new model last week.,Misspelled Names & Acronyms
+17,He works for FIFA as a coach.,He works for FIFA as a coach.,Misspelled Names & Acronyms
+18,I met Bill Gate at a conference.,I met Bill Gates at a conference.,Misspelled Names & Acronyms
+19,They visited the Effiel Tower.,They visited the Eiffel Tower.,Misspelled Names & Acronyms
+20,The UN is holding a meeting in New Yrok.,The UN is holding a meeting in New York.,Misspelled Names & Acronyms
+21,john doe is a software engineer at ibm.,John Doe is a software engineer at IBM.,Casing Errors
+22,nasa launched a new rocket this year.,NASA launched a new rocket this year.,Casing Errors
+23,i work for microsoft corporation.,I work for Microsoft Corporation.,Casing Errors
+24,he graduated from stanford university.,He graduated from Stanford University.,Casing Errors
+25,i met michael jordan at the event.,I met Michael Jordan at the event.,Casing Errors
+26,the un is holding a meeting in new york.,The UN is holding a meeting in New York.,Casing Errors
+27,amazon is expanding globally.,Amazon is expanding globally.,Casing Errors
+28,the usa's economy is growing.,The USA's economy is growing.,Casing Errors
+29,google announced a new product today.,Google announced a new product today.,Casing Errors
+30,fifa is organizing the world cup.,FIFA is organizing the World Cup.,Casing Errors
+31,he works at nasa as a scientist.,He works at NASA as a scientist.,Casing Errors
+32,harvard university is a prestigious institution.,Harvard University is a prestigious institution.,Casing Errors
+33,tesla released a new model.,Tesla released a new model.,Casing Errors
+34,intel is a leading chip manufacturer.,Intel is a leading chip manufacturer.,Casing Errors
+35,stanford university is in california.,Stanford University is in California.,Casing Errors
+36,the united nations is headquartered in new york.,The United Nations is headquartered in New York.,Casing Errors
+37,microsoft was founded by bill gates.,Microsoft was founded by Bill Gates.,Casing Errors
+38,the who is working to combat diseases.,The WHO is working to combat diseases.,Casing Errors
+39,ibm is known for its innovations.,IBM is known for its innovations.,Casing Errors
+40,the unesco organization is working on preserving heritage.,The UNESCO organization is working on preserving heritage.,Casing Errors
+41,The ISBN of the book is 978-3-16-14841-0.,The ISBN of the book is 978-3-16-148410-0.,ISBN & IBAN Numbers
+42,My bank account number is GB29 NWBK 6016 133 9268 19.,My bank account number is GB29 NWBK 6016 1331 9268 19.,ISBN & IBAN Numbers
+43,The ISBN for the novel is 978-3-16-14840-0.,The ISBN for the novel is 978-3-16-148400-0.,ISBN & IBAN Numbers
+44,He gave me the wrong IBAN: GB29 NWBK 6016 1331 926819.,He gave me the wrong IBAN: GB29 NWBK 6016 1331 9268 19.,ISBN & IBAN Numbers
+45,The IBAN starts with GB29 NWBK and ends with 9268 19.,The IBAN starts with GB29 NWBK and ends with 9268 19.,ISBN & IBAN Numbers
+46,"Check the ISBN number, it should be 978-3-16-148401-0.","Check the ISBN number, it should be 978-3-16-148410-0.",ISBN & IBAN Numbers
+47,I need your IBAN for the transfer: GB29 NWBK 60161331926819.,I need your IBAN for the transfer: GB29 NWBK 6016 1331 9268 19.,ISBN & IBAN Numbers
+48,The ISBN was printed incorrectly as 978-3-16-14841-9.,The ISBN was printed incorrectly as 978-3-16-148419-0.,ISBN & IBAN Numbers
+49,My IBAN is GB29 NWBK 6016 1331 926 19.,My IBAN is GB29 NWBK 6016 1331 9268 19.,ISBN & IBAN Numbers
+50,Can you confirm the ISBN? It's 978-3-16-14841-8.,Can you confirm the ISBN? It's 978-3-16-148418-0.,ISBN & IBAN Numbers
+51,The IBAN I received is GB29 NWBK 6016 1331 92681 9.,The IBAN I received is GB29 NWBK 6016 1331 9268 19.,ISBN & IBAN Numbers
+52,She read the ISBN as 978-3-16-14842-0.,She read the ISBN as 978-3-16-148420-0.,ISBN & IBAN Numbers
+53,The IBAN provided is GB29 NWBK 6016 1331926819.,The IBAN provided is GB29 NWBK 6016 1331 9268 19.,ISBN & IBAN Numbers
+54,Is this the correct ISBN? 978-3-16-14840-2.,Is this the correct ISBN? 978-3-16-148402-0.,ISBN & IBAN Numbers
+55,His IBAN ends in 9268 1 9.,His IBAN ends in 9268 19.,ISBN & IBAN Numbers
+56,The ISBN of the new edition is 978-3-16-148400-0.,The ISBN of the new edition is 978-3-16-148410-0.,ISBN & IBAN Numbers
+57,Her IBAN is GB29 NWBK 6016 133 9268 19.,Her IBAN is GB29 NWBK 6016 1331 9268 19.,ISBN & IBAN Numbers
+58,"Check the ISBN, it starts with 978-3-16-1484.","Check the ISBN, it starts with 978-3-16-148410-0.",ISBN & IBAN Numbers
+59,The IBAN should be GB29 NWBK 6016 13 9268 19.,The IBAN should be GB29 NWBK 6016 1331 9268 19.,ISBN & IBAN Numbers
+60,His ISBN was mistyped as 978-3-16-14841-6.,His ISBN was mistyped as 978-3-16-148416-0.,ISBN & IBAN Numbers
+61,I  have an  appointment  tomorrow.,I have an appointment tomorrow.,Inconsistent Spacing
+62,She   went to  the store.,She went to the store.,Inconsistent Spacing
+63,The    sky is  blue.,The sky is blue.,Inconsistent Spacing
+64,They  are  coming  over  later.,They are coming over later.,Inconsistent Spacing
+65,We  will  be  there at 5pm.,We will be there at 5pm.,Inconsistent Spacing
+66,He   likes   to   read books.,He likes to read books.,Inconsistent Spacing
+67,It  was  a great  movie.,It was a great movie.,Inconsistent Spacing
+68,She  is  a  talented  musician.,She is a talented musician.,Inconsistent Spacing
+69,The   car  is parked  outside.,The car is parked outside.,Inconsistent Spacing
+70,We  should  leave  now.,We should leave now.,Inconsistent Spacing
+71,Please   call  me  later.,Please call me later.,Inconsistent Spacing
+72,The   dog   is  barking.,The dog is barking.,Inconsistent Spacing
+73,He  has  three  siblings.,He has three siblings.,Inconsistent Spacing
+74,They  went   to  the  beach.,They went to the beach.,Inconsistent Spacing
+75,I  need   to  buy  groceries.,I need to buy groceries.,Inconsistent Spacing
+76,We  are  meeting  at 6pm.,We are meeting at 6pm.,Inconsistent Spacing
+77,She  is  a  very  kind  person.,She is a very kind person.,Inconsistent Spacing
+78,The   concert   starts  at 8pm.,The concert starts at 8pm.,Inconsistent Spacing
+79,I   will   email  you  tomorrow.,I will email you tomorrow.,Inconsistent Spacing
+80,There  is  a  new  restaurant in town.,There is a new restaurant in town.,Inconsistent Spacing
+81,The price is 100 dollars.,The price is $100.,Incorrect Currency Formats
+82,I paid 50 usd for the ticket.,I paid $50 for the ticket.,Incorrect Currency Formats
+83,The cost is 75 pounds.,The cost is Â£75.,Incorrect Currency Formats
+84,She earned 1000 eur last month.,She earned â‚¬1000 last month.,Incorrect Currency Formats
+85,The total is 5000 yen.,The total is Â¥5000.,Incorrect Currency Formats
+86,They charged me 200 Euros.,They charged me â‚¬200.,Incorrect Currency Formats
+87,I exchanged 1500 dollars to pounds.,I exchanged $1500 to pounds.,Incorrect Currency Formats
+88,He gave me 20usd.,He gave me $20.,Incorrect Currency Formats
+89,The ticket costs 30 eur.,The ticket costs â‚¬30.,Incorrect Currency Formats
+90,The bill came to 100 pounds.,The bill came to Â£100.,Incorrect Currency Formats
+91,I received a refund of 250 Dollars.,I received a refund of $250.,Incorrect Currency Formats
+92,She spent 80usd on the dress.,She spent $80 on the dress.,Incorrect Currency Formats
+93,The price was 45eur.,The price was â‚¬45.,Incorrect Currency Formats
+94,The total amount is 300 yen.,The total amount is Â¥300.,Incorrect Currency Formats
+95,I owe him 120 euros.,I owe him â‚¬120.,Incorrect Currency Formats
+96,They charged 60dollars for the service.,They charged $60 for the service.,Incorrect Currency Formats
+97,She received 400 Pounds as a gift.,She received Â£400 as a gift.,Incorrect Currency Formats
+98,The fine is 75usd.,The fine is $75.,Incorrect Currency Formats
+99,The rent is 500 Euros.,The rent is â‚¬500.,Incorrect Currency Formats
+100,The donation was 1000 pounds.,The donation was Â£1000.,Incorrect Currency Formats
+101,I recieved your letter.,I received your letter.,Basic Typos
+102,She defintely wants to come.,She definitely wants to come.,Basic Typos
+103,The weather is beatiful today.,The weather is beautiful today.,Basic Typos
+104,He doesnt like chocolate.,He doesn't like chocolate.,Basic Typos
+105,We will meet at the restrant.,We will meet at the restaurant.,Basic Typos
+106,This is an intresting book.,This is an interesting book.,Basic Typos
+107,I would like to reshedule the meeting.,I would like to reschedule the meeting.,Basic Typos
+108,The car was parked infront of the house.,The car was parked in front of the house.,Basic Typos
+109,There are severel options to choose from.,There are several options to choose from.,Basic Typos
+110,He apologised for the inconvienence.,He apologized for the inconvenience.,Basic Typos
+111,She has a good sence of humor.,She has a good sense of humor.,Basic Typos
+112,We will deliever the package tomorrow.,We will deliver the package tomorrow.,Basic Typos
+113,The excercise routine is very effective.,The exercise routine is very effective.,Basic Typos
+114,He is extremly talented.,He is extremely talented.,Basic Typos
+115,I have alot of work to do.,I have a lot of work to do.,Basic Typos
+116,They have recieved the shipment.,They have received the shipment.,Basic Typos
+117,I will definitly attend the event.,I will definitely attend the event.,Basic Typos
+118,The experiance was unforgettable.,The experience was unforgettable.,Basic Typos
+119,I need to call the maintenence team.,I need to call the maintenance team.,Basic Typos
+120,He made an unforgivable mistke.,He made an unforgivable mistake.,Basic Typos
+121,"Dear john, thank you for your email.","Dear John, thank you for your email.",Wrong Name in E-Mail
+122,"Hi sarah, I hope this message finds you well.","Hi Sarah, I hope this message finds you well.",Wrong Name in E-Mail
+123,To whom it may concern: i am writing to inquire about...,To Whom It May Concern: I am writing to inquire about...,Wrong Name in E-Mail
+124,"hello mr. smith, I've attached the report you requested.","Hello Mr. Smith, I've attached the report you requested.",Wrong Name in E-Mail
+125,"dear Ms jones, Thank you for your time yesterday.","Dear Ms. Jones, Thank you for your time yesterday.",Wrong Name in E-Mail
+126,"greetings dr brown, I'm following up on our previous conversation.","Greetings Dr. Brown, I'm following up on our previous conversation.",Wrong Name in E-Mail
+127,"hey Professor wilson, When is the next assignment due?","Hey Professor Wilson, When is the next assignment due?",Wrong Name in E-Mail
+128,"Good morning mrs. Johnson, I hope you're having a great day.","Good morning Mrs. Johnson, I hope you're having a great day.",Wrong Name in E-Mail
+129,"Hi there robert, Can we schedule a meeting for next week?","Hi there Robert, Can we schedule a meeting for next week?",Wrong Name in E-Mail
+130,"dear sir/madam, I am writing to express my interest in...","Dear Sir/Madam, I am writing to express my interest in...",Wrong Name in E-Mail
+131,"hello emma, Thanks for your quick response to my inquiry.","Hello Emma, Thanks for your quick response to my inquiry.",Wrong Name in E-Mail
+132,"dear Mr davis, I appreciate your consideration of my application.","Dear Mr. Davis, I appreciate your consideration of my application.",Wrong Name in E-Mail
+133,"hi there alex, I wanted to touch base about the project timeline.","Hi there Alex, I wanted to touch base about the project timeline.",Wrong Name in E-Mail
+134,"good afternoon ms. Chen, I hope this email finds you well.","Good afternoon Ms. Chen, I hope this email finds you well.",Wrong Name in E-Mail
+135,"dear dr. Thompson, Thank you for your insightful presentation.","Dear Dr. Thompson, Thank you for your insightful presentation.",Wrong Name in E-Mail
+136,"hello chris, I'm reaching out regarding the upcoming conference.","Hello Chris, I'm reaching out regarding the upcoming conference.",Wrong Name in E-Mail
+137,"hi jennifer, Can you please review the attached document?","Hi Jennifer, Can you please review the attached document?",Wrong Name in E-Mail
+138,"dear Mr. white, I'm writing to confirm our appointment next week.","Dear Mr. White, I'm writing to confirm our appointment next week.",Wrong Name in E-Mail
+139,"hello miss rodriguez, Thank you for your patience in this matter.","Hello Miss Rodriguez, Thank you for your patience in this matter.",Wrong Name in E-Mail
+140,"dear sir Green, I hope this message reaches you in good health.","Dear Mr. Green, I hope this message reaches you in good health.",Wrong Name in E-Mail
+141,We have 5 apples and six oranges.,We have 5 apples and 6 oranges.,Inconsistent Use of Numbers & Letters
+142,The company has 12 employees and fifteen clients.,The company has 12 employees and 15 clients.,Inconsistent Use of Numbers & Letters
+143,She scored ninety-eight out of 100 on the test.,She scored 98 out of 100 on the test.,Inconsistent Use of Numbers & Letters
+144,The building has 3 floors and four elevators.,The building has 3 floors and 4 elevators.,Inconsistent Use of Numbers & Letters
+145,There are seven days in a week and 365 days in a year.,There are 7 days in a week and 365 days in a year.,Inconsistent Use of Numbers & Letters
+146,The recipe calls for 2 cups of flour and three eggs.,The recipe calls for 2 cups of flour and 3 eggs.,Inconsistent Use of Numbers & Letters
+147,He owns five cars and 12 motorcycles.,He owns 5 cars and 12 motorcycles.,Inconsistent Use of Numbers & Letters
+148,The package includes six pens and 8 pencils.,The package includes 6 pens and 8 pencils.,Inconsistent Use of Numbers & Letters
+149,We need to buy four chairs and 6 tables for the event.,We need to buy 4 chairs and 6 tables for the event.,Inconsistent Use of Numbers & Letters
+150,The game lasted two hours and 45 minutes.,The game lasted 2 hours and 45 minutes.,Inconsistent Use of Numbers & Letters
+151,She has three siblings and 5 cousins.,She has 3 siblings and 5 cousins.,Inconsistent Use of Numbers & Letters
+152,The book has ten chapters and 253 pages.,The book has 10 chapters and 253 pages.,Inconsistent Use of Numbers & Letters
+153,We saw 8 dolphins and fourteen seals during the boat trip.,We saw 8 dolphins and 14 seals during the boat trip.,Inconsistent Use of Numbers & Letters
+154,The conference room can seat twenty people and has 6 windows.,The conference room can seat 20 people and has 6 windows.,Inconsistent Use of Numbers & Letters
+155,He completed the task in 3 hours and thirty minutes.,He completed the task in 3 hours and 30 minutes.,Inconsistent Use of Numbers & Letters
+156,The museum has nine exhibitions and 4 gift shops.,The museum has 9 exhibitions and 4 gift shops.,Inconsistent Use of Numbers & Letters
+157,They ordered 12 pizzas and fifteen salads for the party.,They ordered 12 pizzas and 15 salads for the party.,Inconsistent Use of Numbers & Letters
+158,The team won seven games and lost 3 this season.,The team won 7 games and lost 3 this season.,Inconsistent Use of Numbers & Letters
+159,The package weighs two kilograms and measures 30 centimeters.,The package weighs 2 kilograms and measures 30 centimeters.,Inconsistent Use of Numbers & Letters
+160,We need to hire six new employees and train 4 existing ones.,We need to hire 6 new employees and train 4 existing ones.,Inconsistent Use of Numbers & Letters
+161,"The meeting is scheduled for 2:30 pm on May 15th, 2024.","The meeting is scheduled for 2:30 PM on May 15, 2024.",Incorrect Time and Date Formats
+162,"Our office hours are from 9am to 5pm, Monday through Friday.","Our office hours are from 9:00 AM to 5:00 PM, Monday through Friday.",Incorrect Time and Date Formats
+163,The event will take place on 06/07/2024 at 18:00.,"The event will take place on June 7, 2024, at 6:00 PM.",Incorrect Time and Date Formats
+164,Please submit your report by 11:59 p.m. on 30/09/2024.,"Please submit your report by 11:59 PM on September 30, 2024.",Incorrect Time and Date Formats
+165,The store is open from 10:00AM to 9:00PM every day.,The store is open from 10:00 AM to 9:00 PM every day.,Incorrect Time and Date Formats
+166,The conference will be held from 8/15/24 to 8/17/24.,"The conference will be held from August 15 to August 17, 2024.",Incorrect Time and Date Formats
+167,"Your appointment is confirmed for 3:45pm on Tuesday, 12/5/24.","Your appointment is confirmed for 3:45 PM on Tuesday, December 5, 2024.",Incorrect Time and Date Formats
+168,The deadline for applications is 23:59 on 01/03/2025.,"The deadline for applications is 11:59 PM on March 1, 2025.",Incorrect Time and Date Formats
+169,"The webinar starts at 14:00 GMT on 22nd July, 2024.","The webinar starts at 2:00 PM GMT on July 22, 2024.",Incorrect Time and Date Formats
+170,Please arrive no later than 08:45 A.M. on 4/1/2025.,"Please arrive no later than 8:45 AM on April 1, 2025.",Incorrect Time and Date Formats
+171,"The sale runs from 12/26/24 - 01/02/25, 24 hours a day.","The sale runs from December 26, 2024, to January 2, 2025, 24 hours a day.",Incorrect Time and Date Formats
+172,Your reservation is for 7:30 p.m. on 10-15-2024.,"Your reservation is for 7:30 PM on October 15, 2024.",Incorrect Time and Date Formats
+173,The exam is scheduled for 09:00 hours on 28/02/2025.,"The exam is scheduled for 9:00 AM on February 28, 2025.",Incorrect Time and Date Formats
+174,Our next meeting will be at 13:45 on 17/08/24.,"Our next meeting will be at 1:45 PM on August 17, 2024.",Incorrect Time and Date Formats
+175,"The concert begins at 8 P.M. sharp on Nov. 3rd, 2024.","The concert begins at 8:00 PM sharp on November 3, 2024.",Incorrect Time and Date Formats
+176,Please confirm your attendance by 12pm on 20.05.2025.,"Please confirm your attendance by 12:00 PM on May 20, 2025.",Incorrect Time and Date Formats
+177,The seminar runs from 9:00 to 16:30 on 07/09/2024.,"The seminar runs from 9:00 AM to 4:30 PM on September 7, 2024.",Incorrect Time and Date Formats
+178,Your flight departs at 05:45 AM on 14-02-2025.,"Your flight departs at 5:45 AM on February 14, 2025.",Incorrect Time and Date Formats
+179,The online course starts on 1/1/25 at 00:01.,"The online course starts on January 1, 2025, at 12:01 AM.",Incorrect Time and Date Formats
+180,The gala dinner is on 31-12-2024 from 8pm until midnight.,"The gala dinner is on December 31, 2024, from 8:00 PM until midnight.",Incorrect Time and Date Formats
+181,The book which I bought yesterday is interesting.,"The book, which I bought yesterday, is interesting.",Basic Commas
+182,My brother Tom is a doctor.,"My brother, Tom, is a doctor.",Basic Commas
+183,However she decided not to go to the party.,"However, she decided not to go to the party.",Basic Commas
+184,After finishing her homework she went to bed.,"After finishing her homework, she went to bed.",Basic Commas
+185,The old rusty car broke down again.,"The old, rusty car broke down again.",Basic Commas
+186,He loves cooking reading and traveling.,"He loves cooking, reading, and traveling.",Basic Commas
+187,On Tuesday we have a team meeting.,"On Tuesday, we have a team meeting.",Basic Commas
+188,No I don't agree with that statement.,"No, I don't agree with that statement.",Basic Commas
+189,The tall dark-haired man entered the room.,"The tall, dark-haired man entered the room.",Basic Commas
+190,In fact I've never been to Paris.,"In fact, I've never been to Paris.",Basic Commas
+191,She bought apples oranges and bananas at the store.,"She bought apples, oranges, and bananas at the store.",Basic Commas
+192,Well I suppose we could try that approach.,"Well, I suppose we could try that approach.",Basic Commas
+193,The restaurant known for its excellent service is always busy.,"The restaurant, known for its excellent service, is always busy.",Basic Commas
+194,My best friend Sarah is getting married next month.,"My best friend, Sarah, is getting married next month.",Basic Commas
+195,To be honest I'm not sure about the answer.,"To be honest, I'm not sure about the answer.",Basic Commas
+196,The movie which was released last week has received great reviews.,"The movie, which was released last week, has received great reviews.",Basic Commas
+197,Unfortunately we couldn't attend the concert.,"Unfortunately, we couldn't attend the concert.",Basic Commas
+198,The package having been delayed will arrive tomorrow.,"The package, having been delayed, will arrive tomorrow.",Basic Commas
+199,As a matter of fact I've already completed the assignment.,"As a matter of fact, I've already completed the assignment.",Basic Commas
+200,The CEO John Smith will be speaking at the conference.,"The CEO, John Smith, will be speaking at the conference.",Basic Commas
+201,The team are playing well this season.,The team is playing well this season.,Agreement Errors
+202,Everyone have their own opinion on the matter.,Everyone has their own opinion on the matter.,Agreement Errors
+203,Neither of the sisters want to go to the party.,Neither of the sisters wants to go to the party.,Agreement Errors
+204,The group of students were discussing the project.,The group of students was discussing the project.,Agreement Errors
+205,She don't like coffee.,She doesn't like coffee.,Agreement Errors
+206,The data show that the experiment was successful.,The data shows that the experiment was successful.,Agreement Errors
+207,Each of the candidates have unique qualifications.,Each of the candidates has unique qualifications.,Agreement Errors
+208,The committee are divided on this issue.,The committee is divided on this issue.,Agreement Errors
+209,A number of people was late to the meeting.,A number of people were late to the meeting.,Agreement Errors
+210,The quality of these products have improved.,The quality of these products has improved.,Agreement Errors
+211,Every student in the class have to submit their assignment.,Every student in the class has to submit their assignment.,Agreement Errors
+212,The flock of birds were flying south.,The flock of birds was flying south.,Agreement Errors
+213,None of the employees knows the answer.,None of the employees know the answer.,Agreement Errors
+214,The news are not good today.,The news is not good today.,Agreement Errors
+215,Either John or his sisters is going to the concert.,Either John or his sisters are going to the concert.,Agreement Errors
+216,The jury have reached a verdict.,The jury has reached a verdict.,Agreement Errors
+217,Five years are a long time to wait.,Five years is a long time to wait.,Agreement Errors
+218,Mathematics are my favorite subject.,Mathematics is my favorite subject.,Agreement Errors
+219,The United States have a diverse population.,The United States has a diverse population.,Agreement Errors
+220,One of the books are missing from the shelf.,One of the books is missing from the shelf.,Agreement Errors
+221,Me and him went to the store.,He and I went to the store.,basic-standard-lang
+222,The cat chase the mouse.,The cat chases the mouse.,basic-standard-lang
+223,They is going to the party.,They are going to the party.,basic-standard-lang
+224,The books is on the shelf.,The books are on the shelf.,basic-standard-lang
+225,She don't like pizza.,She doesn't like pizza.,basic-standard-lang
+226,We was late for the meeting.,We were late for the meeting.,basic-standard-lang
+227,The team have won the championship.,The team has won the championship.,basic-standard-lang
+228,You was right about that.,You were right about that.,basic-standard-lang
+229,The children is playing in the park.,The children are playing in the park.,basic-standard-lang
+230,My family are coming to visit.,My family is coming to visit.,basic-standard-lang
+231,The news are interesting today.,The news is interesting today.,basic-standard-lang
+232,Every student have a laptop.,Every student has a laptop.,basic-standard-lang
+233,Neither of them know the answer.,Neither of them knows the answer.,basic-standard-lang
+234,There's many reasons to celebrate.,There are many reasons to celebrate.,basic-standard-lang
+235,A group of birds were flying overhead.,A group of birds was flying overhead.,basic-standard-lang
+236,Each of the cars have a GPS system.,Each of the cars has a GPS system.,basic-standard-lang
+237,The quality of the products have improved.,The quality of the products has improved.,basic-standard-lang
+238,The committee disagree on the proposal.,The committee disagrees on the proposal.,basic-standard-lang
+239,A bunch of grapes are on the table.,A bunch of grapes is on the table.,basic-standard-lang
+240,Everybody were excited about the news.,Everybody was excited about the news.,basic-standard-lang
+241,She goed to the store yesterday.,She went to the store yesterday.,basic-standard-lang
+242,I love apples oranges and bananas,"I love apples, oranges, and bananas.",Punctuation
+243,"She said I'm going to the store.The cat, which was orange, slept on the couch.","She said, ""I'm going to the store."",Quotation marks
+""The cat which was orange slept on the couch",Punctuation
+244,I went to the store I bought milk,I went to the store. I bought milk.,Punctuation
+245,Wow that was amazing,Wow! That was amazing!,Punctuation
+246,Are you coming to the party,Are you coming to the party?,Punctuation
+247,The book was interesting however I didn't finish it,"The book was interesting; however, I didn't finish it.",Punctuation
+248,I need to buy eggs milk and bread,"I need to buy eggs, milk, and bread.",Punctuation
+249,"She whispered lets go My brother, who is a doctor, lives in New York.","She whispered, ""Let's go."",Quotation marks
+""My brother who is a doctor lives in New York",Punctuation
+250,I woke up late I missed my bus,I woke up late. I missed my bus.,Punctuation
+251,Oh no I forgot my keys,Oh no! I forgot my keys!,Punctuation
+252,When will dinner be ready,When will dinner be ready?,Punctuation
+253,I love cooking my family enjoys my meals,I love cooking; my family enjoys my meals.,Punctuation
+254,We need flour sugar and butter,"We need flour, sugar, and butter.",Punctuation
+255,"The teacher announced the test is tomorrow.My car, which is ten years old, needs repairs.","The teacher announced, ""The test is tomorrow."",Quotation marks
+""My car which is ten years old needs repairs",Punctuation
+256,It's raining I'll stay home,It's raining. I'll stay home.,Punctuation
+257,Hurray we won the game,Hurray! We won the game!,Punctuation
+258,Do you know where the library is,Do you know where the library is?,Punctuation
+259,I'm tired I'm going to bed,I'm tired; I'm going to bed.,Punctuation
+260,Please bring a pen notebook and calculator,"Please bring a pen, notebook, and calculator.",Punctuation
+261,"He yelled stop thief.The movie, which lasted three hours, was excellent.","He yelled, ""Stop, thief!"",Quotation marks
+""The movie which lasted three hours was excellent",Punctuation
+262,I love pizza It's my favorite food,I love pizza. It's my favorite food.,Punctuation
+263,I luv ice cream.,I love ice cream.,Unofficial Spellings & Non-Standard Forms
+264,That was so awsome!,That was so awesome!,Unofficial Spellings & Non-Standard Forms
+265,Im going to the mall.,I'm going to the mall.,Unofficial Spellings & Non-Standard Forms
+266,U should check this out.,You should check this out.,Unofficial Spellings & Non-Standard Forms
+267,Thats a great idea!,That's a great idea!,Unofficial Spellings & Non-Standard Forms
+268,Can u help me?,Can you help me?,Unofficial Spellings & Non-Standard Forms
+269,This is the best evr!,This is the best ever!,Unofficial Spellings & Non-Standard Forms
+270,Wanna grab some food?,Do you want to grab some food?,Unofficial Spellings & Non-Standard Forms
+271,I dunno what to do.,I don't know what to do.,Unofficial Spellings & Non-Standard Forms
+272,He's such a cool dude!,He is such a cool dude!,Unofficial Spellings & Non-Standard Forms
+273,Im gonna call you later.,I'm going to call you later.,Unofficial Spellings & Non-Standard Forms
+274,That movie was hella good.,That movie was really good.,Unofficial Spellings & Non-Standard Forms
+275,Pls send me the info.,Please send me the information.,Unofficial Spellings & Non-Standard Forms
+276,Y'all ready for this?,Are you all ready for this?,Unofficial Spellings & Non-Standard Forms
+277,Im feelin kinda tired.,I'm feeling kind of tired.,Unofficial Spellings & Non-Standard Forms
+278,R u free tomorrow?,Are you free tomorrow?,Unofficial Spellings & Non-Standard Forms
+279,That was super fun!,That was extremely fun!,Unofficial Spellings & Non-Standard Forms
+280,Can't wait to see ya!,Can't wait to see you!,Unofficial Spellings & Non-Standard Forms
+281,Thx for the help!,Thanks for the help!,Unofficial Spellings & Non-Standard Forms
+282,Im not sure if thats true.,I'm not sure if that's true.,Unofficial Spellings & Non-Standard Forms
+283,Let me know wht you think.,Let me know what you think.,Unofficial Spellings & Non-Standard Forms
+284,After the movie we went out for ice cream.,"After the movie, we went out for ice cream.",missing commas
+285,Well I guess we'll have to reschedule.,"Well, I guess we'll have to reschedule.",missing commas
+286,Although it was raining heavily the event continued as planned.,"Although it was raining heavily, the event continued as planned.",missing commas
+287,To be honest I don't think that's a good idea.,"To be honest, I don't think that's a good idea.",missing commas
+288,However the results were inconclusive.,"However, the results were inconclusive.",missing commas
+289,Before leaving for vacation I need to finish this report.,"Before leaving for vacation, I need to finish this report.",missing commas
+290,Frankly speaking your performance needs improvement.,"Frankly speaking, your performance needs improvement.",missing commas
+291,Despite the challenges they faced the team succeeded.,"Despite the challenges they faced, the team succeeded.",missing commas
+292,On the other hand we could try a different approach.,"On the other hand, we could try a different approach.",missing commas
+293,Yes that sounds like a great plan.,"Yes, that sounds like a great plan.",missing commas
+294,While I agree with some points I disagree with others.,"While I agree with some points, I disagree with others.",missing commas
+295,In conclusion the study proved the hypothesis.,"In conclusion, the study proved the hypothesis.",missing commas
+296,Nevertheless we should consider all options.,"Nevertheless, we should consider all options.",missing commas
+297,By the way did you hear about the new policy?,"By the way, did you hear about the new policy?",missing commas
+298,If you ask me the decision was poorly made.,"If you ask me, the decision was poorly made.",missing commas
+299,Consequently the project was delayed by several weeks.,"Consequently, the project was delayed by several weeks.",missing commas
+300,As soon as the bell rang the students rushed out.,"As soon as the bell rang, the students rushed out.",missing commas
+301,Honestly I didn't expect such a positive outcome.,"Honestly, I didn't expect such a positive outcome.",missing commas
+302,Upon arrival at the airport we realized we forgot our passports.,"Upon arrival at the airport, we realized we forgot our passports.",missing commas
+303,Naturally the company wants to maximize its profits.,"Naturally, the company wants to maximize its profits.",missing commas
+304,The old rusty car broke down on the highway.,"The old, rusty car broke down on the highway.",missing commas
+305,I seen the movie yesterday.,I saw the movie yesterday.,Incorrect word combinations
+306,She don't like ice cream.,She doesn't like ice cream.,Incorrect word combinations
+307,Me and him went to the store.,He and I went to the store.,Incorrect word combinations
+308,I am going to lay down for a nap.,I am going to lie down for a nap.,Incorrect word combinations
+309,The cat licked it's paw.,The cat licked its paw.,Incorrect word combinations
+310,I could of done better.,I could have done better.,Incorrect word combinations
+311,She is more taller than her sister.,She is taller than her sister.,Incorrect word combinations
+312,They was happy about the news.,They were happy about the news.,Incorrect word combinations
+313,The book is laying on the table.,The book is lying on the table.,Incorrect word combinations
+314,Between you and I this is a secret.,Between you and me this is a secret.,Incorrect word combinations
+315,I ain't got no money.,I don't have any money.,Incorrect word combinations
+316,She is good at cook.,She is good at cooking.,Incorrect word combinations
+317,The company raised there prices.,The company raised their prices.,Incorrect word combinations
+318,He did good on the test.,He did well on the test.,Incorrect word combinations
+319,I am suppose to meet her later.,I am supposed to meet her later.,Incorrect word combinations
+320,The dog wagged it's tail.,The dog wagged its tail.,Incorrect word combinations
+321,Me and my friend are going shopping.,My friend and I are going shopping.,Incorrect word combinations
+322,She has went to the market.,She has gone to the market.,Incorrect word combinations
+323,The books was on the shelf.,The books were on the shelf.,Incorrect word combinations
+324,I should of called earlier.,I should have called earlier.,Incorrect word combinations
+325,This is more better than that one.,This is better than that one.,Incorrect word combinations
+326,"The cat, jumped over the fence.",The cat jumped over the fence.,superflous commas
+327,"She bought apples, oranges, and, bananas.","She bought apples, oranges, and bananas.",superflous commas
+328,"After dinner, we watched a movie, and, went to bed.","After dinner, we watched a movie and went to bed.",superflous commas
+329,"The old, rusty, car, broke down on the highway.","The old, rusty car broke down on the highway.",superflous commas
+330,"He said that, he would arrive at 6 PM.",He said that he would arrive at 6 PM.,superflous commas
+331,"The teacher asked, if anyone had questions.",The teacher asked if anyone had questions.,superflous commas
+332,"Tom, who lives next door, is, a doctor.","Tom, who lives next door, is a doctor.",superflous commas
+333,"Despite the rain, we, decided to go for a walk.","Despite the rain, we decided to go for a walk.",superflous commas
+334,"The book, which I bought yesterday, is, very interesting.","The book, which I bought yesterday, is very interesting.",superflous commas
+335,"She, quickly, ran to catch the bus.",She quickly ran to catch the bus.,superflous commas
+336,"The company's profits, have, increased significantly.",The company's profits have increased significantly.,superflous commas
+337,"My friend, John, is, coming to visit.",My friend John is coming to visit.,superflous commas
+338,"The movie was, both, entertaining and thought-provoking.",The movie was both entertaining and thought-provoking.,superflous commas
+339,"He spoke softly, but, clearly.",He spoke softly but clearly.,superflous commas
+340,"The museum is open, from, 9 AM to 5 PM.",The museum is open from 9 AM to 5 PM.,superflous commas
+341,"She likes to read, write, and, paint, in her free time.","She likes to read, write, and paint in her free time.",superflous commas
+342,"The package, will be delivered, tomorrow.",The package will be delivered tomorrow.,superflous commas
+343,"We visited Paris, France, last summer.","We visited Paris, France, last summer.",superflous commas
+344,"The concert, scheduled for Friday, has been, postponed.","The concert, scheduled for Friday, has been postponed.",superflous commas
+345,"He argued that, the proposal was, flawed.",He argued that the proposal was flawed.,superflous commas
+346,"The cat, jumped over the fence, and, landed gracefully.",The cat jumped over the fence and landed gracefully.,superflous commas
+347,She is 6 foot tall.,She is 6 feet tall.,Different Measurement Units
+348,The box weighs 10 pounds and 5 kilogram.,The box weighs 10 pounds and 5 kilograms.,Different Measurement Units
+349,The distance is 10 mile from here.,The distance is 10 miles from here.,Different Measurement Units
+350,"He needs 3 liters of water, not 3 gallons.","He needs 3 gallons of water, not 3 liters.",Different Measurement Units
+351,This car goes 60 kilometer per hour.,This car goes 60 kilometers per hour.,Different Measurement Units
+352,I bought 2 dozen eggs and 3 pound of flour.,I bought 2 dozen eggs and 3 pounds of flour.,Different Measurement Units
+353,The room is 15 square foot large.,The room is 15 square feet large.,Different Measurement Units
+354,She lost 5 kilograms of weight in a week.,She lost 5 pounds of weight in a week.,Different Measurement Units
+355,The bottle can hold 2 gallons of water.,The bottle can hold 2 liters of water.,Different Measurement Units
+356,The bridge is 300 foot long.,The bridge is 300 feet long.,Different Measurement Units
+357,He needs 100 centimeters of string.,He needs 1 meter of string.,Different Measurement Units
+358,"The parcel weighs 50 grams, not ounces.","The parcel weighs 50 ounces, not grams.",Different Measurement Units
+359,The cake needs 250 milliliters of milk.,The cake needs 1 cup of milk.,Different Measurement Units
+360,He drank 5 liters of coffee in one sitting.,He drank 5 cups of coffee in one sitting.,Different Measurement Units
+361,The lake is 10 square miles in size.,The lake is 10 square kilometers in size.,Different Measurement Units
+362,The baby weighs 8 pounds and 3 ounce.,The baby weighs 8 pounds and 3 ounces.,Different Measurement Units
+363,The tree is 20 foot tall.,The tree is 20 feet tall.,Different Measurement Units
+364,I need 5 tablespoon of sugar.,I need 5 tablespoons of sugar.,Different Measurement Units
+365,The bottle holds 500 milliliters of water.,The bottle holds 16.9 ounces of water.,Different Measurement Units
+366,The recipe calls for 100 grams of flour.,The recipe calls for 1 cup of flour.,Different Measurement Units
+367,Its raining outside,It's raining outside,Apostrophe
+368,Thats not the right way,That's not the right way,Apostrophe
+369,Whats the time?,What's the time?,Apostrophe
+370,Im going to the store,I'm going to the store,Apostrophe
+371,Hes my best friend,He's my best friend,Apostrophe
+372,Shes coming over later,She's coming over later,Apostrophe
+373,Theres a cat in the yard,There's a cat in the yard,Apostrophe
+374,Theyre going to be late,They're going to be late,Apostrophe
+375,Wheres the remote?,Where's the remote?,Apostrophe
+376,Hes not feeling well,He's not feeling well,Apostrophe
+377,Its been a long day,It's been a long day,Apostrophe
+378,Thats the best idea,That's the best idea,Apostrophe
+379,Wheres my phone?,Where's my phone?,Apostrophe
+380,Shes a great singer,She's a great singer,Apostrophe
+381,Im not sure what to do,I'm not sure what to do,Apostrophe
+382,Thats my car,That's my car,Apostrophe
+383,Its time to leave,It's time to leave,Apostrophe
+384,Theyre already here,They're already here,Apostrophe
+385,Whats the matter?,What's the matter?,Apostrophe
+386,Im so tired,I'm so tired,Apostrophe
+387,Wheres the bathroom?,Where's the bathroom?,Apostrophe
+388,I don't have no money.,I don't have any money.,Double Negation
+389,He can't hardly wait for the concert.,He can hardly wait for the concert.,Double Negation
+390,We didn't see nobody at the park.,We didn't see anybody at the park.,Double Negation
+391,She won't never give up on her dreams.,She will never give up on her dreams.,Double Negation
+392,There isn't nothing we can do about it.,There isn't anything we can do about it.,Double Negation
+393,I couldn't barely hear what he was saying.,I could barely hear what he was saying.,Double Negation
+394,They don't want no trouble.,They don't want any trouble.,Double Negation
+395,You can't not go to the meeting.,You must go to the meeting.,Double Negation
+396,I don't disagree with nothing you said.,I agree with everything you said.,Double Negation
+397,It's not impossible to achieve.,It's possible to achieve.,Double Negation
+398,She didn't fail to not impress the judges.,She impressed the judges.,Double Negation
+399,We couldn't help but not notice the error.,We couldn't help noticing the error.,Double Negation
+400,The recipe isn't no good without salt.,The recipe isn't good without salt.,Double Negation
+401,You shouldn't not tell the truth.,You should tell the truth.,Double Negation
+402,I don't know nothing about that.,I don't know anything about that.,Double Negation
+403,He ain't got no reason to lie.,He has no reason to lie.,Double Negation
+404,We can't do nothing until the boss arrives.,We can't do anything until the boss arrives.,Double Negation
+405,She didn't say nothing about the plan.,She didn't say anything about the plan.,Double Negation
+406,I'm not unsure about my decision.,I'm sure about my decision.,Double Negation
+407,They couldn't not laugh at the joke.,They couldn't help laughing at the joke.,Double Negation
+408,The reason is because the computer is malfunctioning.,The reason is that the computer is malfunctioning.,Repetition
+409,She nodded her head in agreement.,She nodded in agreement.,Repetition
+410,We need to collaborate together on this project.,We need to collaborate on this project.,Repetition
+411,The final outcome resulted in a positive result.,The final outcome was positive.,Repetition
+412,He repeated the same point again and again.,He repeatedly made the same point.,Repetition
+413,Please RSVP as soon as possible.,Please RSVP.,Repetition
+414,The problem is is that we're running out of time.,The problem is that we're running out of time.,Repetition
+415,She always exaggerates things and blows them out of proportion.,She always exaggerates things.,Repetition
+416,We must plan ahead for the future.,We must plan for the future.,Repetition
+417,The furniture was arranged in a circular circle.,The furniture was arranged in a circle.,Repetition
+418,He has a personal opinion on the matter.,He has an opinion on the matter.,Repetition
+419,They completely eliminated all traces of evidence.,They eliminated all traces of evidence.,Repetition
+420,The team collaborated together to solve the problem.,The team collaborated to solve the problem.,Repetition
+421,She whispered quietly so no one could hear.,She whispered so no one could hear.,Repetition
+422,We will continue to persist until we succeed.,We will persist until we succeed.,Repetition
+423,The final conclusion of the study was inconclusive.,The conclusion of the study was inconclusive.,Repetition
+424,He made a brief summary of the main points.,He summarized the main points.,Repetition
+425,They postponed the meeting until a later date.,They postponed the meeting.,Repetition
+426,The new innovations revolutionized the industry.,The innovations revolutionized the industry.,Repetition
+427,She gave me a free gift as a token of appreciation.,She gave me a gift as a token of appreciation.,Repetition
+428,It will take some time to get to a decision.,It will take some time to reach a decision.,Overused Words & Phrases
+429,"At the end of the day, we need to focus on results.","Ultimately, we need to focus on results.",Overused Words & Phrases
+430,I'm just saying that we should consider all options.,We should consider all options.,Overused Words & Phrases
+431,The fact of the matter is that our budget is limited.,Our budget is limited.,Overused Words & Phrases
+432,We need to think outside the box for this project.,We need innovative solutions for this project.,Overused Words & Phrases
+433,I touch base with the client on a weekly basis.,I contact the client weekly.,Overused Words & Phrases
+434,Let's circle back to this issue later.,Let's revisit this issue later.,Overused Words & Phrases
+435,We need to get our ducks in a row before the presentation.,We need to organize thoroughly before the presentation.,Overused Words & Phrases
+436,The project is currently in a holding pattern.,The project is currently on hold.,Overused Words & Phrases
+437,Let's take this discussion offline.,Let's discuss this privately.,Overused Words & Phrases
+438,We need to drill down into the data.,We need to analyze the data in detail.,Overused Words & Phrases
+439,This is a win-win situation for both parties.,This benefits both parties.,Overused Words & Phrases
+440,Let's not reinvent the wheel on this process.,Let's use established methods for this process.,Overused Words & Phrases
+441,We need to hit the ground running on this project.,We need to start this project efficiently.,Overused Words & Phrases
+442,I'll keep you in the loop about any changes.,I'll inform you about any changes.,Overused Words & Phrases
+443,Let's table this discussion for now.,Let's postpone this discussion for now.,Overused Words & Phrases
+444,We need to leverage our resources more effectively.,We need to use our resources more effectively.,Overused Words & Phrases
+445,The ball is in your court now.,It's your turn to act now.,Overused Words & Phrases
+446,Let's not beat around the bush.,Let's be direct.,Overused Words & Phrases
+447,We need to push the envelope with this design.,We need to be more innovative with this design.,Overused Words & Phrases
+448,Cat the on mat sat.,The cat sat on the mat.,incorrect word order
+449,Quickly she the problem solved.,She quickly solved the problem.,incorrect word order
+450,Book my friend gave me a.,My friend gave me a book.,incorrect word order
+451,Ate pizza I yesterday.,I ate pizza yesterday.,incorrect word order
+452,Happy very am I today.,I am very happy today.,incorrect word order
+453,To the store went we.,We went to the store.,incorrect word order
+454,Car red the fast is.,The red car is fast.,incorrect word order
+455,Often movies watch I.,I often watch movies.,incorrect word order
+456,Loudly the dog barked very.,The dog barked very loudly.,incorrect word order
+457,Breakfast for eggs scrambled had I.,I had scrambled eggs for breakfast.,incorrect word order
+458,Beautifully sang she the song.,She sang the song beautifully.,incorrect word order
+459,Basketball play they every weekend.,They play basketball every weekend.,incorrect word order
+460,Carefully the letter read he.,He read the letter carefully.,incorrect word order
+461,Book on the table the is.,The book is on the table.,incorrect word order
+462,Quickly ran the boy home.,The boy ran home quickly.,incorrect word order
+463,Coffee hot like I in morning the.,I like hot coffee in the morning.,incorrect word order
+464,Always smile she does.,She always smiles.,incorrect word order
+465,Quietly the room entered they.,They entered the room quietly.,incorrect word order
+466,Delicious the cake extremely was.,The cake was extremely delicious.,incorrect word order
+467,Patiently for bus waited we the.,We patiently waited for the bus.,incorrect word order
+468,Blue the sky is today bright.,The sky is bright blue today.,incorrect word order
+469,"The meeting is schedule for February 31, 2024.","The meeting is scheduled for February 29, 2024.",Incorrect Dates
+470,"We got married in April 31, 2023.","We got married on April 30, 2023.",Incorrect Dates
+471,The concert will be held on June 31st.,The concert will be held on June 30th.,Incorrect Dates
+472,His birthday is on November 31.,His birthday is on November 30.,Incorrect Dates
+473,"The event is planned for September 31, 2025.","The event is planned for September 30, 2025.",Incorrect Dates
+474,The deadline is set for April 31.,The deadline is set for April 30.,Incorrect Dates
+475,We'll celebrate our anniversary on June 31.,We'll celebrate our anniversary on June 30.,Incorrect Dates
+476,"The conference starts on February 30, 2023.","The conference starts on February 28, 2023.",Incorrect Dates
+477,The sale ends on April 31st at midnight.,The sale ends on April 30th at midnight.,Incorrect Dates
+478,Our flight departs on November 31 at 9 PM.,Our flight departs on November 30 at 9 PM.,Incorrect Dates
+479,"The contract expires on September 31, 2024.","The contract expires on September 30, 2024.",Incorrect Dates
+480,We're moving to our new office on June 31.,We're moving to our new office on July 1.,Incorrect Dates
+481,The museum will be closed from February 30 to March 2.,The museum will be closed from February 28 to March 2.,Incorrect Dates
+482,The festival runs from August 30 to August 32.,The festival runs from August 30 to September 1.,Incorrect Dates
+483,Classes begin on September 31 this year.,Classes begin on September 1 this year.,Incorrect Dates
+484,"The warranty is valid until April 31, 2026.","The warranty is valid until April 30, 2026.",Incorrect Dates
+485,We'll launch the product on November 31 at noon.,We'll launch the product on December 1 at noon.,Incorrect Dates
+486,"The solar eclipse will occur on February 30, 2025.","The solar eclipse will occur on February 28, 2025.",Incorrect Dates
+487,The restaurant's grand opening is on June 31.,The restaurant's grand opening is on July 1.,Incorrect Dates
+488,The tax filing deadline is April 31 this year.,The tax filing deadline is April 15 this year.,Incorrect Dates
+489,I am go to the store,I am going to the store,wrong use of tenses
+490,He don't like pizza,He doesn't like pizza,wrong use of tenses
+491,They was happy about the news,They were happy about the news,wrong use of tenses
+492,She have been to Paris,She has been to Paris,wrong use of tenses
+493,We is studying for the exam,We are studying for the exam,wrong use of tenses
+494,The cat meowed loudly yesterday night,The cat meowed loudly last night,wrong use of tenses
+495,I seen the movie already,I have seen the movie already,wrong use of tenses
+496,He didn't went to the party,He didn't go to the party,wrong use of tenses
+497,She don't know the answer,She doesn't know the answer,wrong use of tenses
+498,They is coming to dinner,They are coming to dinner,wrong use of tenses
+499,We was late for the meeting,We were late for the meeting,wrong use of tenses
+500,He have three cats,He has three cats,wrong use of tenses
+501,I am lived here for five years,I have lived here for five years,wrong use of tenses
+502,She don't have to work today,She doesn't have to work today,wrong use of tenses
+503,They wasn't interested in the offer,They weren't interested in the offer,wrong use of tenses
+504,We has finished the project,We have finished the project,wrong use of tenses
+505,He were sick yesterday,He was sick yesterday,wrong use of tenses
+506,I doesn't like spicy food,I don't like spicy food,wrong use of tenses
+507,She have been working since morning,She has been working since morning,wrong use of tenses
+508,They is going to the beach tomorrow,They are going to the beach tomorrow,wrong use of tenses
+509,I writed a letter to my friend,I wrote a letter to my friend,wrong use of tenses
+510,The thing over there is broken.,The lamp on the side table is broken.,Lack of Clarity
+511,He told him that his car was ready.,John told Mike that Mike's car was ready.,Lack of Clarity
+512,They said it would be done soon.,The mechanics said the car repairs would be done by Friday.,Lack of Clarity
+513,I saw her duck.,I saw her duck under the low-hanging branch.,Lack of Clarity
+514,The dog was on the table that was broken.,The dog was on the broken table.,Lack of Clarity
+515,We discussed the project and its problems.,We discussed the marketing project and its budget problems.,Lack of Clarity
+516,She left it there.,She left the package on the front porch.,Lack of Clarity
+517,The teacher said to do it this way.,The math teacher demonstrated how to solve the equation step-by-step.,Lack of Clarity
+518,They're having a sale on those.,The electronics store is having a sale on laptops.,Lack of Clarity
+519,He didn't like the way it was done.,The manager didn't like the way the report was formatted.,Lack of Clarity
+520,The meeting is about that thing from last week.,The meeting is about the budget discrepancy discovered last week.,Lack of Clarity
+521,Can you get some of those for me?,Can you pick up some apples from the grocery store for me?,Lack of Clarity
+522,The old one is better than the new one.,The 2022 model of the car is more reliable than the 2023 model.,Lack of Clarity
+523,Put it over there somewhere.,Please place the book on the shelf next to the window.,Lack of Clarity
+524,We need to address the issue before it's too late.,We need to address the declining sales figures before the end of the quarter.,Lack of Clarity
+525,The guy with the thing called about the stuff.,The plumber with the wrench called about the leaky pipes.,Lack of Clarity
+526,I don't like how they handled it.,I don't like how the customer service team handled the refund request.,Lack of Clarity
+527,Can you do that thing you did last time?,Can you proofread this document as you did with the previous report?,Lack of Clarity
+528,The results were not what we expected.,The survey results showed lower customer satisfaction than we expected.,Lack of Clarity
+529,Make sure it's done right this time.,Ensure the inventory count is accurate and double-checked this time.,Lack of Clarity
+530,I will quit my job this month.,i will resign from my job this month,Informal Style Detection
+531,Please provide me with your contact information.,gimme ur contact info,Informal Style Detection
+532,I am unable to attend the meeting tomorrow.,cant make it to the meeting tmrw,Informal Style Detection
+533,The project was completed successfully.,we nailed the project,Informal Style Detection
+534,Would you like to join us for dinner?,wanna grab dinner w/ us?,Informal Style Detection
+535,I apologize for the inconvenience caused.,sry for the trouble,Informal Style Detection
+536,Could you please clarify your previous statement?,what do u mean by that?,Informal Style Detection
+537,I am experiencing technical difficulties.,my computer's acting up,Informal Style Detection
+538,The presentation was very informative.,the prez was super helpful,Informal Style Detection
+539,I concur with your assessment of the situation.,"yeah, i totally agree w/ u",Informal Style Detection
+540,Please submit your report by Friday.,get ur report in by fri,Informal Style Detection
+541,I am delighted to hear about your promotion.,congrats on leveling up at work!,Informal Style Detection
+542,The conference call is scheduled for 3 PM.,we're doing a call at 3,Informal Style Detection
+543,Your assistance in this matter is greatly appreciated.,"thanks for the help, means a lot",Informal Style Detection
+544,I will review the document and provide feedback.,i'll check it out and let u know what i think,Informal Style Detection
+545,The deadline for submissions is approaching.,"heads up, deadline's coming soon",Informal Style Detection
+546,Please ensure all participants are notified.,make sure everyone knows what's up,Informal Style Detection
+547,I recommend we postpone the decision until next week.,let's hold off on deciding till next week,Informal Style Detection
+548,The data indicates a positive trend in sales.,looks like sales are going up,Informal Style Detection
+549,Your prompt response would be most helpful.,pls get back to me asap,Informal Style Detection
+550,Your going to love this movie.,You're going to love this movie.,Word Confusion
+551,Its been a long day at work.,It's been a long day at work.,Word Confusion
+552,The affect of the medicine was immediate.,The effect of the medicine was immediate.,Word Confusion
+553,She excepted the job offer with enthusiasm.,She accepted the job offer with enthusiasm.,Word Confusion
+554,I could care less about the outcome.,I couldn't care less about the outcome.,Word Confusion
+555,The principal amount of the loan is quite high.,The principle amount of the loan is quite high.,Word Confusion
+556,He use to work here before he retired.,He used to work here before he retired.,Word Confusion
+557,Their planning to move to a new house next month.,They're planning to move to a new house next month.,Word Confusion
+558,The weather had a big affect on our travel plans.,The weather had a big effect on our travel plans.,Word Confusion
+559,I hope this email finds you well and that your doing great.,I hope this email finds you well and that you're doing great.,Word Confusion
+560,Please bare with me while I finish this presentation.,Please bear with me while I finish this presentation.,Word Confusion
+561,The company has adapted a new policy for remote work.,The company has adopted a new policy for remote work.,Word Confusion
+562,He was conscience of the fact that he was being watched.,He was conscious of the fact that he was being watched.,Word Confusion
+563,The team lead complemented her on her excellent work.,The team lead complimented her on her excellent work.,Word Confusion
+564,She brought a desert to share at the potluck dinner.,She brought a dessert to share at the potluck dinner.,Word Confusion
+565,The council will wave the fee for first-time applicants.,The council will waive the fee for first-time applicants.,Word Confusion
+566,We need to insure that all safety protocols are followed.,We need to ensure that all safety protocols are followed.,Word Confusion
+567,He was given free reign to redesign the office layout.,He was given free rein to redesign the office layout.,Word Confusion
+568,The new software will allow us to better track are inventory.,The new software will allow us to better track our inventory.,Word Confusion
+569,She has a unique prospective on the issue at hand.,She has a unique perspective on the issue at hand.,Word Confusion
+570,The chef's specialty is chicken ala king.,The chef's specialty is chicken à la king.,Foreign Terms
+571,She has a certain 'jenny say qua' that makes her stand out.,She has a certain 'je ne sais quoi' that makes her stand out.,Foreign Terms
+572,The company's modus operandi is to expand rapidly.,The company's modus operandi is to expand rapidly.,Foreign Terms
+573,He always says 'carpe deum' before starting a new project.,He always says 'carpe diem' before starting a new project.,Foreign Terms
+574,The ad hoc committee met to discuss the budget.,The ad hoc committee met to discuss the budget.,Foreign Terms
+575,Her exotic looks give her a certain 'joi de vivre'.,Her exotic looks give her a certain 'joie de vivre'.,Foreign Terms
+576,The meal was served with a side of crudites.,The meal was served with a side of crudités.,Foreign Terms
+577,He's the defacto leader of the group.,He's the de facto leader of the group.,Foreign Terms
+578,The performance was a tour de force.,The performance was a tour de force.,Foreign Terms
+579,They communicated via a tete-a-tete meeting.,They communicated via a tête-à-tête meeting.,Foreign Terms
+580,The politician's faux pax cost him the election.,The politician's faux pas cost him the election.,Foreign Terms
+581,She has a laissez faire attitude towards parenting.,She has a laissez-faire attitude towards parenting.,Foreign Terms
+582,"The critics gave the play rave reviews, calling it a piece de resistance.","The critics gave the play rave reviews, calling it a pièce de résistance.",Foreign Terms
+583,"He always orders his steak well-done, much to the chef's chagrin.","He always orders his steak well-done, much to the chef's chagrin.",Foreign Terms
+584,The company operates on a quid pro quo basis with its partners.,The company operates on a quid pro quo basis with its partners.,Foreign Terms
+585,She's well-known in the art world for her trompe l'oil paintings.,She's well-known in the art world for her trompe l'œil paintings.,Foreign Terms
+586,"The project was completed in record time, a real tour de force.","The project was completed in record time, a real tour de force.",Foreign Terms
+587,He has a certain savoire faire that impresses clients.,He has a certain savoir-faire that impresses clients.,Foreign Terms
+588,The menu featured escargot as an hors d'oevre.,The menu featured escargot as an hors d'œuvre.,Foreign Terms
+589,Her resume included an impressive curriculum vitae.,Her résumé included an impressive curriculum vitae.,Foreign Terms

@@ -1,0 +1,14 @@
+{
+  "author": "Codex",
+  "version": "0.1.0",
+  "description": "Independently authored custom grammar rules for Harper.",
+  "license": "Apache-2.0",
+  "keywords": [
+    "harper",
+    "weir",
+    "grammar",
+    "american-english",
+    "benchmark"
+  ],
+  "website": "https://writewithharper.com"
+}

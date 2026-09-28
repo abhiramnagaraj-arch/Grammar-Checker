@@ -1,0 +1,24 @@
+expr main (each books needs)
+
+let message "Use a singular noun after each."
+let description "Fixes a narrow each-plus-plural pattern."
+let kind "Grammar"
+let becomes "each book needs"
+let strategy "MatchCase"
+
+test "Each books needs" "Each book needs"
+test "each books needs" "each book needs"
+test "Each books needs." "Each book needs."
+test "Each books needs?" "Each book needs?"
+test "Each books needs!" "Each book needs!"
+
+allows "Each book needs a cover."
+allows "Each of the books needs a cover."
+allows "Each student needs a cover."
+allows "Every book needs a cover."
+allows "The books were counted."
+allows "Each, books, and journals were listed."
+allows "Each new book needs a cover."
+allows "We bought books for each child."
+allows "Each book was counted."
+allows "Each of these books matters."

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Harper Custom Lexicon",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["default"],
+        "properties": {
+          "default": { "type": "string" },
+          "plural_allowed": { "type": "boolean" },
+          "exceptions": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+expr main (most worst)
+
+let message "Use worst instead of most worst."
+let description "Fixes a narrow double-superlative phrase."
+let kind "Grammar"
+let becomes "worst"
+let strategy "MatchCase"
+
+test "This is most worst." "This is worst."
+test "It felt most worst today." "It felt worst today."
+test "That answer is most worst." "That answer is worst."
+test "Why is this most worst?" "Why is this worst?"
+test "The result was most worst of all." "The result was worst of all."
+
+allows "This is worst."
+allows "This is the worst."
+allows "This is much better."
+allows "The worst result arrived."
+allows "A most detailed answer was helpful."
+allows "This was the worst option."
+allows "The phrase most of all is common."
+allows "He said most, worst, and fastest."
+allows "Most answers are valid."
+allows "The worst part was obvious."

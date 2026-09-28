@@ -1,0 +1,24 @@
+expr main (would to)
+
+let message "Drop the extra to after would."
+let description "Removes a redundant to after would in a narrow local pattern."
+let kind "Grammar"
+let becomes "would"
+let strategy "MatchCase"
+
+test "I would to go." "I would go."
+test "She would to stay." "She would stay."
+test "They WOULD to hurry." "They WOULD hurry."
+test "Why would to wait?" "Why would wait?"
+test "He would to leave, if needed." "He would leave, if needed."
+
+allows "I would go."
+allows "She would not go."
+allows "We need to go."
+allows "Would you leave?"
+allows "I would, if possible, go."
+allows "They would always wait."
+allows "You would do it."
+allows "The would-be case was hard."
+allows "He would try again."
+allows "We would go now."

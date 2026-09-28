@@ -1,0 +1,7 @@
+{
+  "dialect": "American",
+  "lintConfig": {},
+  "weirpack": "custom-grammar/generated/custom-grammar.weirpack",
+  "dictionary": null,
+  "description": "Built-in Harper plus the safe custom Weirpack."
+}

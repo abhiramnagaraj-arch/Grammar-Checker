@@ -1,0 +1,24 @@
+expr main (can to)
+
+let message "Drop the extra to after can."
+let description "Removes a redundant to after can in a narrow local pattern."
+let kind "Grammar"
+let becomes "can"
+let strategy "MatchCase"
+
+test "I can to help." "I can help."
+test "She can to finish it." "She can finish it."
+test "They CAN to help." "They CAN help."
+test "Why can to wait?" "Why can wait?"
+test "He can to help, if needed." "He can help, if needed."
+
+allows "I can help."
+allows "She cannot help."
+allows "We need to help."
+allows "Can you help?"
+allows "I can, if asked, help."
+allows "They can always help."
+allows "You can do it."
+allows "The can opener was dented."
+allows "He can try again."
+allows "We can go now."

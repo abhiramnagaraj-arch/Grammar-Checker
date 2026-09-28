@@ -1,0 +1,24 @@
+expr main (one of the book)
+
+let message "Make the noun plural after one of the."
+let description "Fixes a narrow one-of-the singular noun pattern."
+let kind "Grammar"
+let becomes "one of the books"
+let strategy "MatchCase"
+
+test "One of the book is missing." "One of the books is missing."
+test "one of the book was damaged." "one of the books was damaged."
+test "ONE OF THE BOOK came loose." "ONE OF THE BOOKS came loose."
+test "I found one of the book on the floor." "I found one of the books on the floor."
+test "The note said one of the book had been moved." "The note said one of the books had been moved."
+
+allows "One of the books is missing."
+allows "One of the pages is missing."
+allows "One of the title pages was strange."
+allows "One of the best books is missing."
+allows "One of the many books is missing."
+allows "one of the old books was damaged"
+allows "The book is missing."
+allows "Some of the book is missing."
+allows "One book is missing."
+allows "A book is missing."

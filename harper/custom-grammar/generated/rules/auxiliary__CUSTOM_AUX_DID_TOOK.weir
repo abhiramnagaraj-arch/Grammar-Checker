@@ -1,0 +1,24 @@
+expr main (did took)
+
+let message "Use the base verb after did."
+let description "Corrects a narrow irregular-verb form after did."
+let kind "Grammar"
+let becomes "did take"
+let strategy "MatchCase"
+
+test "I did took the bus." "I did take the bus."
+test "She did took the train." "She did take the train."
+test "They DID took it home." "They DID take it home."
+test "Why did took that?" "Why did take that?"
+test "He did took it, then left." "He did take it, then left."
+
+allows "I did take the bus."
+allows "She did not take the train."
+allows "We took the bus."
+allows "Did you take that?"
+allows "He had taken it."
+allows "We did, at last, take it."
+allows "They will take it."
+allows "I have taken it."
+allows "The took sign was wrong."
+allows "He did think twice."

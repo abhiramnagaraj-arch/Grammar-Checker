@@ -1,0 +1,24 @@
+expr main (should to)
+
+let message "Drop the extra to after should."
+let description "Removes a redundant to after should in a narrow local pattern."
+let kind "Grammar"
+let becomes "should"
+let strategy "MatchCase"
+
+test "I should to leave." "I should leave."
+test "She should to call now." "She should call now."
+test "They SHOULD to wait." "They SHOULD wait."
+test "Why should to wait?" "Why should wait?"
+test "He should to leave, if needed." "He should leave, if needed."
+
+allows "I should leave."
+allows "She should not leave."
+allows "We need to leave."
+allows "Should you stay?"
+allows "I should, if possible, leave."
+allows "They should always wait."
+allows "You should do it."
+allows "The should-have case was hard."
+allows "He should try again."
+allows "We should go now."

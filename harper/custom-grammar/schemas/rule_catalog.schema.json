@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Harper Custom Rule Catalog",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "rule_id",
+      "title",
+      "grammar_category",
+      "implementation",
+      "status",
+      "confidence",
+      "auto_apply",
+      "false_positive_risk",
+      "source_basis",
+      "description",
+      "lexicons",
+      "positive_test_count",
+      "negative_test_count",
+      "benchmark_categories",
+      "known_limitations"
+    ],
+    "properties": {
+      "rule_id": { "type": "string" },
+      "title": { "type": "string" },
+      "grammar_category": { "type": "string" },
+      "implementation": { "type": "string", "enum": ["weir", "native", "lexicon", "detection_only"] },
+      "status": { "type": "string" },
+      "confidence": { "type": "string" },
+      "auto_apply": { "type": "boolean" },
+      "false_positive_risk": { "type": "string" },
+      "source_basis": { "type": "string" },
+      "description": { "type": "string" },
+      "lexicons": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "positive_test_count": { "type": "integer", "minimum": 0 },
+      "negative_test_count": { "type": "integer", "minimum": 0 },
+      "benchmark_categories": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "known_limitations": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    }
+  }
+}

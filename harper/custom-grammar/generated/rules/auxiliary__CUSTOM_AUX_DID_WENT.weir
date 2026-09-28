@@ -1,0 +1,24 @@
+expr main (did went)
+
+let message "Use the base verb after did."
+let description "Corrects a narrow irregular-verb form after did."
+let kind "Grammar"
+let becomes "did go"
+let strategy "MatchCase"
+
+test "I did went home." "I did go home."
+test "She did went too far." "She did go too far."
+test "They DID went east." "They DID go east."
+test "Why did went there?" "Why did go there?"
+test "He did went, then left." "He did go, then left."
+
+allows "I did go home."
+allows "She did not go home."
+allows "We went home."
+allows "Did you go home?"
+allows "He had gone home."
+allows "We did, at last, go home."
+allows "They will go home."
+allows "I have gone home."
+allows "The didactic example was clear."
+allows "He did think twice."

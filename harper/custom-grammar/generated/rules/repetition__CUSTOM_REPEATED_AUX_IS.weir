@@ -1,0 +1,24 @@
+expr main (is is)
+
+let message "Remove the repeated auxiliary."
+let description "Removes an adjacent repeated auxiliary in a local phrase."
+let kind "Grammar"
+let becomes "is"
+let strategy "MatchCase"
+
+test "it is is clear" "it is clear"
+test "This IS is important." "This IS important."
+test "He says it is is fine." "He says it is fine."
+test "Why is is that?" "Why is that?"
+test "The report is is ready." "The report is ready."
+
+allows "it is clear"
+allows "this is important"
+allows "it is, in fact, clear"
+allows "Why is that?"
+allows "The analysis is complete."
+allows "This issue is serious."
+allows "The iris is red."
+allows "It is, is it, done?"
+allows "The status is stable."
+allows "There is no issue."

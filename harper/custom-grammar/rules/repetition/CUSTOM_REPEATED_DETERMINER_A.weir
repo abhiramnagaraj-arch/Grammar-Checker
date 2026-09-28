@@ -1,0 +1,24 @@
+expr main (a a)
+
+let message "Remove the repeated article."
+let description "Removes an adjacent repeated determiner."
+let kind "Grammar"
+let becomes "a"
+let strategy "MatchCase"
+
+test "a a car" "a car"
+test "A a answer was found." "A answer was found."
+test "They chose a a first option." "They chose a first option."
+test "Why a a delay?" "Why a delay?"
+test "He kept a a spare key." "He kept a spare key."
+
+allows "a car"
+allows "a better car"
+allows "a theme of the talk"
+allows "A theater was full."
+allows "a good answer"
+allows "the a mistake"
+allows "in a hurry"
+allows "a, a, and only a key"
+allows "The allegory was discussed."
+allows "their a plan"

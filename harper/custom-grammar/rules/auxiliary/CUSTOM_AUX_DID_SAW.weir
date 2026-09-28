@@ -1,0 +1,24 @@
+expr main (did saw)
+
+let message "Use the base verb after did."
+let description "Corrects a narrow irregular-verb form after did."
+let kind "Grammar"
+let becomes "did see"
+let strategy "MatchCase"
+
+test "I did saw it." "I did see it."
+test "She did saw the sign." "She did see the sign."
+test "They DID saw it clearly." "They DID see it clearly."
+test "Why did saw that?" "Why did see that?"
+test "He did saw it, then left." "He did see it, then left."
+
+allows "I did see it."
+allows "She did not see it."
+allows "We saw it."
+allows "Did you see it?"
+allows "He had seen it."
+allows "We did, at last, see it."
+allows "They will see it."
+allows "I have seen it."
+allows "The saw is sharp."
+allows "He did think twice."
